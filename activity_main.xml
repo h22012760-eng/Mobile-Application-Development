@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Aurora animated background -->
+    <com.puzzleverse.game.AuroraBackgroundView
+        android:id="@+id/aurora_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!-- Main content over aurora -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Top Bar -->
+        <LinearLayout
+            android:id="@+id/top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_aurora_panel"
+            android:elevation="4dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!-- App name with aurora heading style -->
+            <TextView
+                android:id="@+id/tv_app_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/app_name"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/aurora_cyan"/>
+
+            <!-- Premium badge -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/premium_badge"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textColor="@color/aurora_cyan"
+                android:background="@drawable/bg_aurora_premium_badge"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:layout_marginEnd="12dp"/>
+
+            <!-- Coin pill -->
+            <LinearLayout
+                android:id="@+id/coins_container"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_aurora_coin_pill"
+                android:paddingStart="12dp"
+                android:paddingEnd="14dp"
+                android:contentDescription="@string/coin_balance_desc"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/emoji_coin"
+                    android:textSize="14sp"
+                    android:importantForAccessibility="no"/>
+
+                <TextView
+                    android:id="@+id/tv_coin_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zero"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/accent_gold"
+                    android:layout_marginStart="5dp"
+                    android:importantForAccessibility="no"/>
+
+            </LinearLayout>
+
+            <!-- Settings button -->
+            <TextView
+                android:id="@+id/btn_settings"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:text="@string/emoji_settings"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:onClick="onSettingsClicked"
+                android:contentDescription="@string/settings_desc"
+                android:importantForAccessibility="yes"
+                android:background="@drawable/bg_aurora_close"
+                android:clickable="true"
+                android:focusable="true"/>
+
+        </LinearLayout>
+
+        <!-- Home Content -->
+        <ScrollView
+            android:id="@+id/layout_home_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/transparent"
+            app:layout_constraintTop_toBottomOf="@id/top_bar"
+            app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!-- Welcome banner -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    app:cardBackgroundColor="#00000000"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp"
+                    android:layout_marginBottom="20dp"
+                    android:contentDescription="@string/welcome_banner_desc">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@drawable/bg_aurora_panel"
+                        android:padding="20dp">
+
+                        <TextView
+                            android:id="@+id/tv_welcome_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ready_to_puzzle"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/aurora_cyan"
+                            android:layout_marginBottom="6dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_welcome_sub"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/welcome_subtitle"
+                            android:textSize="13sp"
+                            android:textStyle="italic"
+                            android:textColor="@color/aurora_cyan_dim"
+                            android:layout_marginBottom="16dp"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_play_now"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:text="@string/play_now"
+                            android:onClick="onPlayClicked"
+                            android:textColor="@color/aurora_bg_deep"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            app:backgroundTint="@color/aurora_cyan"
+                            app:cornerRadius="24dp"
+                            android:paddingStart="32dp"
+                            android:paddingEnd="32dp"/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Streak banner — hidden by default, shown when streak >= 2 -->
+                <LinearLayout
+                    android:id="@+id/streak_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:background="@drawable/bg_aurora_card"
+                    android:layout_marginBottom="12dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_streak_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🔥 2 day streak!"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFD700"/>
+
+                </LinearLayout>
+
+                <!-- Stats row -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="88dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@drawable/bg_aurora_card"
+                        android:layout_marginEnd="8dp"
+                        android:contentDescription="@string/stat_levels_desc">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/emoji_trophy"
+                            android:textSize="22sp"
+                            android:importantForAccessibility="no"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/fifty_levels"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/aurora_text_primary"
+                            android:layout_marginTop="4dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/to_conquer"
+                            android:textSize="11sp"
+                            android:textColor="@color/aurora_text_secondary"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="88dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@drawable/bg_aurora_card"
+                        android:layout_marginStart="8dp"
+                        android:contentDescription="@string/stat_daily_desc">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/emoji_calendar"
+                            android:textSize="22sp"
+                            android:importantForAccessibility="no"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/thirty_challenges"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/aurora_text_primary"
+                            android:layout_marginTop="4dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/daily_puzzles"
+                            android:textSize="11sp"
+                            android:textColor="@color/aurora_text_secondary"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- How to play -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_aurora_card"
+                    android:padding="18dp"
+                    android:layout_marginBottom="16dp"
+                    android:contentDescription="@string/how_to_play_desc">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/how_to_play"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/aurora_cyan"
+                        android:layout_marginBottom="12dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tutorial_step_1"
+                        android:textSize="13sp"
+                        android:textColor="@color/aurora_text_primary"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tutorial_step_2"
+                        android:textSize="13sp"
+                        android:textColor="@color/aurora_text_primary"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tutorial_step_3"
+                        android:textSize="13sp"
+                        android:textColor="@color/aurora_text_primary"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- Bottom Navigation -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:background="#EE0B0C10"
+            app:menu="@menu/bottom_nav_menu"
+            app:itemIconTint="@color/nav_selector"
+            app:itemTextColor="@color/nav_selector"
+            app:labelVisibilityMode="labeled"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="UnusedAttribute"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

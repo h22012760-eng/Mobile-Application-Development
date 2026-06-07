@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:id="@+id/card_level_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_aurora_level_normal"
+        android:elevation="3dp"
+        android:paddingBottom="8dp">
+
+        <!-- Thumbnail -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="68dp">
+
+            <ImageView
+                android:id="@+id/iv_level_thumb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/level"/>
+
+            <!-- Lock overlay -->
+            <View
+                android:id="@+id/view_lock_overlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#BB000000"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_lock_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/emoji_lock"
+                android:textSize="20sp"
+                android:visibility="gone"
+                android:importantForAccessibility="no"/>
+
+            <!-- Difficulty badge — top right -->
+            <TextView
+                android:id="@+id/tv_level_badge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|end"
+                android:layout_margin="4dp"
+                android:textSize="12sp"
+                android:importantForAccessibility="no"/>
+
+        </FrameLayout>
+
+        <!-- Level number and stars -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="6dp">
+
+            <TextView
+                android:id="@+id/tv_level_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/aurora_text_primary"/>
+
+            <TextView
+                android:id="@+id/tv_level_stars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                android:importantForAccessibility="no"/>
+
+        </LinearLayout>
+
+        <!-- Mode label — Easy / Difficult (NO grid numbers) -->
+        <TextView
+            android:id="@+id/tv_level_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:textColor="@color/aurora_cyan_dim"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"/>
+
+        <!-- Personal best moves -->
+        <TextView
+            android:id="@+id/tv_level_best"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="9sp"
+            android:textColor="@color/aurora_text_secondary"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</FrameLayout>

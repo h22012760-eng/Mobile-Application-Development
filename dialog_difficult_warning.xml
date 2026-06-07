@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="28dp"
+    android:background="@color/bg_secondary">
+
+    <!-- Fire emoji -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/emoji_fire"
+        android:textSize="52sp"
+        android:importantForAccessibility="no"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/difficult_level"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        android:layout_marginBottom="6dp"/>
+
+    <!-- Dynamic level number set from Java -->
+    <TextView
+        android:id="@+id/tv_dialog_level_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Level 3"
+        android:textSize="13sp"
+        android:textColor="@color/level_border_difficult"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Divider -->
+    <View
+        android:layout_width="56dp"
+        android:layout_height="2dp"
+        android:background="@color/level_border_difficult"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Description -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/difficult_warning_desc"
+        android:textSize="13sp"
+        android:textColor="@color/text_secondary"
+        android:gravity="center"
+        android:lineSpacingExtra="4dp"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Coin reward hint -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/difficult_reward_desc"
+        android:textSize="13sp"
+        android:textColor="@color/accent_gold"
+        android:textStyle="bold"/>
+
+</LinearLayout>

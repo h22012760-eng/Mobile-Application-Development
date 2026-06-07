@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bg_aurora_toast"
+    android:paddingStart="32dp"
+    android:paddingEnd="32dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:elevation="20dp"
+    android:minWidth="200dp"
+    android:maxWidth="300dp">
+
+    <TextView
+        android:id="@+id/tv_aurora_toast_emoji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:importantForAccessibility="no"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_aurora_toast_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#66FCF1"
+        android:gravity="center"
+        android:letterSpacing="0.02"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/tv_aurora_toast_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#8099A0"
+        android:gravity="center"
+        android:lineSpacingExtra="3dp"/>
+
+</LinearLayout>

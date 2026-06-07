@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bg_aurora_toast"
+    android:paddingStart="28dp"
+    android:paddingEnd="28dp"
+    android:paddingTop="18dp"
+    android:paddingBottom="18dp"
+    android:elevation="16dp"
+    android:minWidth="180dp">
+
+    <TextView
+        android:id="@+id/tv_toast_emoji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:importantForAccessibility="no"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_toast_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#66FCF1"
+        android:gravity="center"
+        android:letterSpacing="0.04"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/tv_toast_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#8899AA"
+        android:gravity="center"/>
+
+</LinearLayout>

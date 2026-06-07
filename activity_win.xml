@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.puzzleverse.game.AuroraBackgroundView
+        android:id="@+id/aurora_bg_win"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingStart="28dp"
+            android:paddingEnd="28dp"
+            android:paddingTop="60dp"
+            android:paddingBottom="40dp">
+
+            <!-- Trophy — large, animated drop-in -->
+            <TextView
+                android:id="@+id/tv_win_trophy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/emoji_trophy"
+                android:textSize="100sp"
+                android:importantForAccessibility="no"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/tv_win_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/puzzle_complete_emoji"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/aurora_cyan"
+                android:gravity="center"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Divider line -->
+            <View
+                android:layout_width="60dp"
+                android:layout_height="2dp"
+                android:background="@color/aurora_cyan"
+                android:alpha="0.5"
+                android:layout_marginBottom="32dp"/>
+
+            <!-- New personal best badge -->
+            <TextView
+                android:id="@+id/tv_win_new_best"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/new_personal_best"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="@color/aurora_cyan"
+                android:background="@drawable/bg_aurora_premium_badge"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:layout_marginBottom="24dp"
+                android:visibility="gone"/>
+
+            <!-- Stats card — moves + coins only -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_aurora_card"
+                android:padding="24dp"
+                android:gravity="center"
+                android:layout_marginBottom="32dp">
+
+                <TextView
+                    android:id="@+id/tv_win_moves"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary"
+                    android:layout_marginBottom="20dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#1566FCF1"
+                    android:layout_marginBottom="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coins_earned"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_secondary"
+                    android:layout_marginBottom="6dp"/>
+
+                <TextView
+                    android:id="@+id/tv_win_coins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/aurora_cyan"/>
+
+            </LinearLayout>
+
+            <!-- Next level — primary filled -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_win_next"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="@string/next_level"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/space_dark"
+                android:contentDescription="@string/desc_next_level"
+                app:backgroundTint="@color/aurora_cyan"
+                app:cornerRadius="26dp"
+                android:layout_marginBottom="12dp"
+                style="@style/AuroraButton.Primary"/>
+
+            <!-- Play again — outline -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_win_again"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/play_again"
+                android:contentDescription="@string/desc_play_again"
+                android:layout_marginBottom="12dp"
+                style="@style/AuroraButton.Outline"/>
+
+            <!-- Home + Share -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_win_home"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="@string/back_home"
+                    android:textSize="12sp"
+                    android:contentDescription="@string/desc_back_home"
+                    android:layout_marginEnd="8dp"
+                    style="@style/AuroraButton.Outline"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_win_share"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="@string/share"
+                    android:textSize="12sp"
+                    android:contentDescription="@string/desc_share"
+                    style="@style/AuroraButton.Outline"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dp">
+
+    <LinearLayout
+        android:id="@+id/card_daily_root"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/bg_aurora_daily_unlocked"
+        android:elevation="3dp">
+
+        <TextView
+            android:id="@+id/tv_daily_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:importantForAccessibility="no"/>
+
+        <TextView
+            android:id="@+id/tv_daily_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/aurora_text_primary"
+            android:layout_marginTop="2dp"/>
+
+        <!-- Status label — Play / Done / Locked — NO grid size -->
+        <TextView
+            android:id="@+id/tv_daily_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="@color/aurora_cyan"
+            android:layout_marginTop="2dp"/>
+
+        <!-- Countdown — only shown when played today -->
+        <TextView
+            android:id="@+id/tv_daily_countdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="9sp"
+            android:textColor="@color/aurora_text_secondary"
+            android:fontFamily="monospace"
+            android:layout_marginTop="2dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</FrameLayout>

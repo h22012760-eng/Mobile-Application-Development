@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="28dp"
+    android:background="@drawable/bg_aurora_panel">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="😤"
+        android:textSize="56sp"
+        android:importantForAccessibility="no"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/out_of_moves_title"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#66FCF1"
+        android:layout_marginBottom="8dp"/>
+
+    <View
+        android:layout_width="48dp"
+        android:layout_height="1dp"
+        android:background="#66FCF1"
+        android:layout_marginBottom="14dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/out_of_moves_desc"
+        android:textSize="13sp"
+        android:textColor="#8899AA"
+        android:gravity="center"
+        android:lineSpacingExtra="4dp"
+        android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/bg_aurora_card"
+        android:padding="14dp">
+
+        <TextView
+            android:id="@+id/tv_fail_moves_used"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="#F87171"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_fail_pieces_placed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="#66FCF1"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>
