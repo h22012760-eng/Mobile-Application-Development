@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">PuzzleVerse</string>
+    <string name="app_tagline">A Universe of Puzzles</string>
+    <string name="app_version_placeholder">v1.0</string>
+    <string name="app_version_full">PuzzleVerse v1.0</string>
+    <string name="premium_badge">PREMIUM</string>
+
+    <!-- Navigation labels -->
+    <string name="nav_daily">Daily</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_levels">Levels</string>
+    <string name="nav_achievements">Awards</string>
+    <string name="daily_challenge">Daily Challenge</string>
+    <string name="home">Home</string>
+    <string name="achievements">Achievements</string>
+    <string name="settings">Settings</string>
+
+    <!-- Home screen -->
+    <string name="ready_to_puzzle">Ready to Puzzle?</string>
+    <string name="welcome_subtitle">Every piece tells a story. Find yours.</string>
+    <string name="play_now">Play Now</string>
+    <string name="fifty_levels">50 Levels</string>
+    <string name="to_conquer">To conquer</string>
+    <string name="thirty_challenges">30 Challenges</string>
+    <string name="daily_puzzles">Daily puzzles</string>
+    <string name="how_to_play">How to Play</string>
+    <string name="tutorial_step_1">🎯  Drag and slide pieces to swap their positions</string>
+    <string name="tutorial_step_2">🔗  Correctly placed neighbours snap into groups automatically</string>
+    <string name="tutorial_step_3">🪙  Earn coins to use Peek, Ghost, and power-ups</string>
+
+    <!-- Level select -->
+    <string name="select_level">Select Level</string>
+    <string name="tap_to_start">%1$d / %2$d completed</string>
+    <string name="grid_5x5">5×5</string>
+    <string name="grid_6x6">6×6</string>
+    <string name="grid_7x7">7×7</string>
+    <string name="best_moves_format">Best: %d moves</string>
+
+    <!-- Puzzle screen -->
+    <string name="level_format">Level %d</string>
+    <string name="daily_challenge_format">Daily Challenge %d</string>
+    <string name="level_label_default">Level 1</string>
+    <string name="moves_label">moves</string>
+    <string name="progress_placeholder">0 / 25 pieces</string>
+    <string name="progress_format">%1$d / %2$d pieces</string>
+    <string name="pieces_placed_format">Pieces: %1$d / %2$d</string>
+    <string name="moves_used_format">Moves used: %d</string>
+
+    <!-- Peek -->
+    <string name="peek">Peek</string>
+    <string name="peek_button_text">👁 Peek (15🪙)</string>
+    <string name="peek_peeking">👁 Peeking…</string>
+    <string name="peek_timer_format">👁 %ds</string>
+    <string name="peek_cost">15 coins to peek at the full image for 3 seconds!</string>
+    <string name="peek_not_enough_coins_msg">You need %d coins to peek.\nComplete more levels to earn coins! 🪙</string>
+
+    <!-- Ghost -->
+    <string name="ghost_btn">👻 Ghost (30🪙)</string>
+    <string name="ghost_hide">👻 Hide Ghost</string>
+    <string name="ghost_not_enough">You need 30 coins to activate the ghost image.</string>
+
+    <!-- Scramble -->
+    <string name="scramble_btn_label">🔀 Scramble</string>
+    <string name="scramble_btn">Scramble!</string>
+    <string name="scramble_title">Scramble Pieces?</string>
+    <string name="scramble_msg">This will reshuffle all unplaced pieces at no cost.</string>
+
+    <!-- Coins -->
+    <string name="coins">Coins</string>
+    <string name="coins_earned">Coins Earned</string>
+    <string name="coins_earned_value_format">+%d 🪙</string>
+    <string name="not_enough_coins">Not Enough Coins</string>
+    <string name="coin_balance_desc">Coin balance</string>
+    <string name="current_coins_placeholder">You have 0 coins 🪙</string>
+    <string name="coins_info_desc">Earn coins by completing levels. Spend them on Peek, Ghost, and more.</string>
+
+    <!-- Difficulty -->
+    <string name="difficult_level">Difficult Level!</string>
+    <string name="difficult_level_title">⚠️ Difficult Level!</string>
+    <string name="difficult_level_msg">This is a 6×6 puzzle with 36 pieces. Stay focused!</string>
+    <string name="difficult_warning_desc">This puzzle has a 6×6 grid with 36 pieces — trickier than usual. Take your time and think carefully!</string>
+    <string name="difficult_reward_desc">🪙 Reward: 25 coins on completion</string>
+    <string name="daily_difficult_msg">This Daily Challenge has a 7×7 grid — 49 pieces. Good luck!</string>
+
+    <!-- Dialogs -->
+    <string name="exit_confirm_title">Leave Puzzle?</string>
+    <string name="exit_confirm_msg">Your progress will be lost. Are you sure?</string>
+    <string name="leave">Leave</string>
+    <string name="stay">Stay</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="back">Back</string>
+    <string name="got_it">Got it! 💪</string>
+    <string name="awesome">Awesome!</string>
+    <string name="next_level">Next Level ▶</string>
+    <string name="play_again">Play Again</string>
+    <string name="back_home">Back to Home</string>
+    <string name="try_again">Try Again!</string>
+    <string name="puzzle_complete_emoji">Puzzle Complete! 🎉</string>
+    <string name="challenge_complete_emoji">Challenge Complete! 🎉</string>
+    <string name="out_of_moves">Out of Moves!</string>
+    <string name="scramble_confirm_positive">Scramble!</string>
+
+    <!-- Win dialog -->
+    <string name="moves_time_format">Moves: %1$d   Time: %2$s</string>
+    <string name="win_time_format">%02d:%02d</string>
+
+    <!-- Level start dialog -->
+    <string name="play_btn">Play!</string>
+    <string name="start_level_reward_format">+%d 🪙 on completion</string>
+
+    <!-- Settings -->
+    <string name="sound">Sound Effects</string>
+    <string name="music">Background Music</string>
+    <string name="vibration">Vibration</string>
+    <string name="sound_desc">Piece snap and tap sounds</string>
+    <string name="music_desc">Relaxing background music</string>
+    <string name="vibration_desc">Vibrate when pieces snap</string>
+    <string name="settings_section_audio">🎵  Audio</string>
+    <string name="settings_section_haptics">📳  Haptics</string>
+    <string name="settings_section_coins">🪙  Coins</string>
+
+    <!-- Daily challenge -->
+    <string name="thirty_daily_challenges">30 Daily Challenges</string>
+    <string name="daily_completed_placeholder">0 / 30 completed</string>
+    <string name="daily_completed_format">%1$d / %2$d completed</string>
+    <string name="daily_challenge_specs">49 pieces • +40 coins on completion</string>
+    <string name="daily_start_puzzle">Start! 🧩</string>
+    <string name="daily_already_completed_title">Come Back Tomorrow! 📅</string>
+    <string name="daily_already_completed_msg">You\'ve already completed Daily Challenge %d today.\n\nNext unlock in: %s\n\nComplete other unlocked challenges in the meantime!</string>
+    <string name="daily_replay_no_coins">Replay (No Coins)</string>
+    <string name="done_today">Done Today</string>
+    <string name="daily_info_desc">A tough 7×7 puzzle with 49 pieces awaits! This is harder than regular levels — take your time.</string>
+    <string name="daily_reward_desc">🪙 Reward: 40 coins on completion</string>
+
+    <!-- Achievements -->
+    <string name="achievement_unlocked_header">Achievement Unlocked!</string>
+    <string name="achievements_unlocked_format">%1$d / %2$d unlocked</string>
+    <string name="achievement_unlocked_status">✅ Unlocked</string>
+    <string name="achievement_progress_format">%1$d / %2$d</string>
+    <string name="achievements_coins_earned_format">Earned from achievements: %d 🪙</string>
+
+    <!-- Accessibility -->
+    <string name="content_desc_back">Go back</string>
+    <string name="settings_desc">Open settings</string>
+    <string name="coin_balance_accessibility">Coin balance: %d coins</string>
+    <string name="welcome_banner_desc">Welcome banner</string>
+    <string name="stat_levels_desc">50 levels to conquer</string>
+    <string name="stat_daily_desc">30 daily challenges available</string>
+    <string name="how_to_play_desc">How to play instructions</string>
+
+    <!-- Emojis stored as strings -->
+    <string name="emoji_coin">🪙</string>
+    <string name="emoji_settings">⚙️</string>
+    <string name="emoji_puzzle">🧩</string>
+    <string name="emoji_trophy">🏆</string>
+    <string name="emoji_calendar">📅</string>
+    <string name="emoji_check">✅</string>
+    <string name="emoji_fire">🔥</string>
+    <string name="emoji_lock">🔒</string>
+    <string name="emoji_star">⭐</string>
+    <string name="emoji_star_empty">☆</string>
+    <string name="emoji_play">▶</string>
+
+    <!-- Misc labels -->
+    <string name="zero">0</string>
+    <string name="default_moves">60</string>
+    <string name="symbol_close">✕</string>
+    <string name="emoji_magnet">🧲</string>
+    <string name="locked">Locked</string>
+    <string name="completed">Completed</string>
+    <string name="play">Play</string>
+    <string name="done">Done</string>
+    <string name="normal">Normal</string>
+    <string name="difficult">Difficult</string>
+    <string name="level">Level</string>
+    <string name="back_arrow">←</string>
+    <string name="go_back">← Go Back</string>
+    <string name="coming_soon">Coming Soon</string>
+
+    <!-- Onboarding -->
+    <string name="onboard_next">Next →</string>
+    <string name="onboard_start">Start Playing! 🚀</string>
+    <string name="onboard_skip">Skip Tutorial</string>
+
+    <!-- Stat labels -->
+    <string name="stat_moves">Moves: %d</string>
+    <string name="stat_time">Time: %s</string>
+    <string name="streak_format">🔥 %d day streak!</string>
+
+    <string name="label_easy">Easy</string>
+    <string name="label_difficult">Difficult</string>
+    <string name="label_daily">Daily</string>
+    <string name="label_mode_easy">Easy Mode</string>
+    <string name="label_mode_difficult">Difficult Mode</string>
+    <string name="label_mode_daily">Daily Challenge</string>
+    <string name="mode_easy_desc">A great puzzle awaits you!</string>
+    <string name="mode_difficult_desc">This one will test you!</string>
+    <string name="mode_daily_desc">Your daily brain workout!</string>
+    <string name="moves_bar_label">Moves</string>
+    <string name="out_of_moves_title">Out of Moves!</string>
+    <string name="out_of_moves_desc">You used all your moves but the puzzle is not complete. Try again!</string>
+    <string name="share">📤 Share</string>
+    <string name="new_personal_best">🏅 New Personal Best!</string>
+
+    <!-- Accessibility descriptions for buttons -->
+    <string name="desc_ghost_btn">Activate ghost image hint</string>
+    <string name="desc_peek_btn">Peek at full image for 3 seconds</string>
+    <string name="desc_scramble_btn">Scramble unplaced pieces</string>
+    <string name="desc_edge_btn">Toggle edge piece highlight</string>
+    <string name="desc_close_btn">Exit puzzle</string>
+    <string name="desc_next_level">Go to next level</string>
+    <string name="desc_play_again">Play this level again</string>
+    <string name="desc_back_home">Return to home screen</string>
+    <string name="desc_share">Share your result</string>
+</resources>

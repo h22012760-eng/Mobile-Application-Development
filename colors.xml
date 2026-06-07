@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        PuzzleVerse — Celestial Aurora Theme
+        TWO COLORS ONLY:
+        #0D0D1A  — Deep Space (background, dark surfaces)
+        #66FCF1  — Aurora Cyan (all accents, borders, text)
+
+        Everything else is derived from these two with alpha.
+    -->
+
+    <!-- Primary colors -->
+    <color name="space_dark">#0D0D1A</color>
+    <color name="aurora_cyan">#66FCF1</color>
+
+    <!-- Space dark derivatives (transparency layers) -->
+    <color name="space_surface">#1A1A2E</color>
+    <color name="space_card">#12122A</color>
+    <color name="space_overlay">#0A0A14</color>
+
+    <!-- Aurora cyan derivatives (transparency) -->
+    <color name="cyan_strong">#CC66FCF1</color>
+    <color name="cyan_medium">#8066FCF1</color>
+    <color name="cyan_soft">#4D66FCF1</color>
+    <color name="cyan_subtle">#2666FCF1</color>
+    <color name="cyan_ghost">#1466FCF1</color>
+
+    <!-- Text hierarchy (all cyan-based) -->
+    <color name="text_heading">#66FCF1</color>
+    <color name="text_primary">#B3F5EF</color>
+    <color name="text_secondary">#8099A0</color>
+    <color name="text_hint">#445566</color>
+    <color name="text_disabled">#2A3A40</color>
+
+    <!-- ── Backward-compatible aliases ─────────────────────────────── -->
+    <!-- These map old names to the 2-color system so existing code compiles -->
+    <color name="bg_primary">@color/space_dark</color>
+    <color name="bg_secondary">@color/space_surface</color>
+    <color name="bg_card">@color/space_card</color>
+    <color name="accent_primary">@color/aurora_cyan</color>
+    <color name="accent_secondary">@color/aurora_cyan</color>
+    <color name="accent_gold">@color/aurora_cyan</color>
+    <color name="accent_tagline">@color/aurora_cyan</color>
+    <color name="aurora_bg_deep">@color/space_dark</color>
+    <color name="aurora_bg_darker">@color/space_overlay</color>
+    <color name="aurora_panel">@color/space_surface</color>
+    <color name="aurora_panel_dark">@color/space_card</color>
+    <color name="aurora_board_bg">@color/space_dark</color>
+    <color name="aurora_border">@color/aurora_cyan</color>
+    <color name="aurora_border_dim">#2A4A50</color>
+    <color name="aurora_text_primary">@color/text_primary</color>
+    <color name="aurora_text_heading">@color/text_heading</color>
+    <color name="aurora_text_secondary">@color/text_secondary</color>
+    <color name="aurora_text_hint">@color/text_hint</color>
+    <color name="aurora_cyan_dim">#4ABCB5</color>
+    <color name="aurora_snap_glow">@color/aurora_cyan</color>
+    <color name="aurora_violet">@color/aurora_cyan</color>
+    <color name="aurora_teal">@color/aurora_cyan</color>
+    <color name="nav_background">@color/space_dark</color>
+    <color name="nav_selected">@color/aurora_cyan</color>
+    <color name="nav_unselected">@color/text_hint</color>
+    <color name="level_locked">@color/space_card</color>
+    <color name="level_normal">@color/space_surface</color>
+    <color name="level_difficult">@color/space_card</color>
+    <color name="level_completed">@color/space_card</color>
+    <color name="level_border_normal">@color/aurora_cyan</color>
+    <color name="level_border_difficult">@color/aurora_cyan</color>
+    <color name="level_border_completed">@color/aurora_cyan</color>
+    <color name="tier_bronze">@color/aurora_cyan</color>
+    <color name="tier_silver">@color/aurora_cyan</color>
+    <color name="tier_gold">@color/aurora_cyan</color>
+    <color name="tier_diamond">@color/aurora_cyan</color>
+    <color name="switch_track">@color/space_surface</color>
+    <color name="progress_bg">@color/space_dark</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+</resources>

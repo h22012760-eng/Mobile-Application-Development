@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.PuzzleVerse" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">#66FCF1</item>
+        <item name="colorPrimaryVariant">#1A1A2E</item>
+        <item name="colorOnPrimary">#0D0D1A</item>
+        <item name="colorSecondary">#66FCF1</item>
+        <item name="colorOnSecondary">#0D0D1A</item>
+        <item name="android:windowBackground">@color/space_dark</item>
+        <item name="android:statusBarColor">#0D0D1A</item>
+        <item name="android:navigationBarColor">#0D0D1A</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="Theme.PuzzleVerse.Splash" parent="Theme.PuzzleVerse">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- Aurora glass dialog — 2 colors only -->
+    <style name="PuzzleVerseDialog" parent="ThemeOverlay.MaterialComponents.Dialog">
+        <item name="colorPrimary">#66FCF1</item>
+        <item name="colorOnSurface">#B3F5EF</item>
+        <item name="android:background">@drawable/bg_aurora_panel</item>
+        <item name="android:textColorPrimary">#B3F5EF</item>
+        <item name="android:textColorSecondary">#8099A0</item>
+        <item name="buttonBarPositiveButtonStyle">@style/AuroraButton.Primary</item>
+        <item name="buttonBarNegativeButtonStyle">@style/AuroraButton.Outline</item>
+        <item name="buttonBarNeutralButtonStyle">@style/AuroraButton.Outline</item>
+    </style>
+
+    <!-- Primary filled button — cyan bg, dark text -->
+    <style name="AuroraButton.Primary" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">#66FCF1</item>
+        <item name="android:textColor">#0D0D1A</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">24dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="rippleColor">#1A1A2E</item>
+    </style>
+
+    <!-- Outline button — transparent bg, cyan border + text -->
+    <style name="AuroraButton.Outline" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="backgroundTint">#00000000</item>
+        <item name="strokeColor">#66FCF1</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="android:textColor">#66FCF1</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">24dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Small outline button for bottom bars -->
+    <style name="AuroraButton.Small" parent="AuroraButton.Outline">
+        <item name="android:textSize">10sp</item>
+        <item name="cornerRadius">18dp</item>
+    </style>
+
+    <!-- Icon/close button — small circle -->
+    <style name="AuroraButton.Icon" parent="AuroraButton.Outline">
+        <item name="cornerRadius">20dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <!-- Progress bar — cyan fill -->
+    <style name="TealProgressBar" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressTint">#66FCF1</item>
+        <item name="android:progressBackgroundTint">#1A1A2E</item>
+        <item name="android:minHeight">6dp</item>
+        <item name="android:maxHeight">6dp</item>
+    </style>
+
+</resources>
